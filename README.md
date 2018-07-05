@@ -1,17 +1,24 @@
-# Gatsby Plugin Boilerplate
+# gatsby-plugin-web-font-loader
 
-A simple Gatsby plugin boilerplate.
-
-## Getting started
-
-```bash
-git clone git@github.com:escaladesports/gatsby-plugin-boilerplate.git your-module
-cd your-module
-yarn
-yarn reset
-```
+A Gatsby plugin to asynchronously load webfonts using [Web Font Loader](https://github.com/typekit/webfontloader). Can load fonts from [Google Fonts](http://www.google.com/fonts/), [Typekit](http://www.typekit.com/),  [Fonts.com](http://www.fonts.com/), and [Fontdeck](http://fontdeck.com/), as well as self-hosted web fonts.
 
 ## Usage
 
-- `yarn test`: Run mocha tests
-- `yarn analyze`: View bundle sizes
+In your `gatsby-config.js` file, load in the plugin along with which web fonts to load. For example, loading Google Fonts could look like this:
+
+```javascript
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        google: {
+          families: ['Droid Sans', 'Droid Serif']
+        }
+      }
+    }
+  ]
+}
+```
+
+For a list of all available options, consult the [Web Font Loader readme](https://github.com/typekit/webfontloader).

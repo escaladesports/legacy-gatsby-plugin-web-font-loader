@@ -6,7 +6,13 @@
     "plugin",
     "web",
     "font",
-    "loader"
+    "loader",
+    "google",
+    "typekit",
+    "webfont",
+    "webfontloader",
+    "fonts.com",
+    "fontdeck"
   ],
   "main": "gatsby-browser.js",
   "author": "Kennedy Rose <krose@escaladesports.com>",

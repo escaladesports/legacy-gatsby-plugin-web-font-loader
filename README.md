@@ -10,7 +10,7 @@ In your `gatsby-config.js` file, load in the plugin along with which web fonts t
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-html-attributes',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
           families: ['Droid Sans', 'Droid Serif']

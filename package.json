@@ -2,6 +2,7 @@
   "name": "gatsby-plugin-web-font-loader",
   "version": "1.0.3",
   "keywords": [
+    "gatsby-plugin",
     "gatsby",
     "plugin",
     "web",
